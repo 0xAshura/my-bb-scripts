@@ -32,7 +32,7 @@ amass enum -passive -df "$DOMAINS_FILE" -o subs/am.txt
 # Run Shosubgo
 echo "[+] Running Shosubgo..."
 # <-- change the Shodan API key below if needed -->
-shosubgo -f "$DOMAINS_FILE" -s dmCgPVzPVQqIasNKhYhuQQ2DxqSsXpLM | tee -a subs/shosub.txt
+shosubgo -f "$DOMAINS_FILE" -s api-key | tee -a subs/shosub.txt
 
 # Run Findomain and split output
 echo "[+] Running Findomain..."
